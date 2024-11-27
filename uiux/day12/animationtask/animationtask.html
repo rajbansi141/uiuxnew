@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation Task</title>
+    <style>
+        .parent1{
+          
+            background-color: lightblue;
+            overflow: auto;
+            padding: 10px;
+            border: 2px solid black;
+        }
+        .child1{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            animation-name: movebox;
+            position: relative;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            border: 2px solid black;
+           
+        }
+       
+
+        @keyframes movebox {
+
+           
+            25%{
+                background-color: red;
+               width: 25%;
+
+
+            }
+            50%{
+                background-color: yellow;
+               width: 50%;
+            }
+            75%{
+                background-color: blue;
+               width: 75%;
+            }
+            100%{
+                background-color: green;
+            width: 100%;
+            }
+        } 
+
+    </style>
+</head>
+<body>
+    <div class="parent1">
+        <div class="child1"></div>
+        
+    </div>
+
+</body>
+</html>
