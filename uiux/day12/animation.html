@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animationt</title>
+    <style>
+        .box{
+            height:150px;
+            width: 150px;
+            background-color: lightcoral;
+            animation-name: movebox;
+            position: relative;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        /* .box:hover{
+            margin-top:40px; ;
+        } */
+
+        @keyframes movebox {
+
+            0%{
+                background-color: lightgreen;
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                background-color: lightgray;
+               left: 200px;
+               top: 0px;
+
+
+            }
+            50%{
+                background-color: lightgoldenrodyellow;
+               top: 200px;
+               left: 200px;
+            }
+            75%{
+                background-color: lightcoral;
+               top: 200px;
+               left: 0;
+            }
+            100%{
+                background-color: lightblue;
+                left: 0;
+               top: 0px;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>
