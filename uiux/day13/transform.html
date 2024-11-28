@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .box{
+        height:200px;
+        width: 200px;
+        background-color: lightblue;
+        }
+        .minibox{
+            height:200px;
+        width: 200px;
+        background-color: lightcoral;
+        transition: all 2s ease-in-out;
+        }
+        .minibox:hover{
+            /* transform: rotate(360deg); */
+            /* transform: rotateX(60deg); */
+
+            /* transform: scaleX(2);
+            transform: scaleY(2);
+            transform: scaleY(2);
+            transform: scale(2); */
+            
+            /* transform: skew(30deg, 30deg);
+            transform: skewX(30deg); */
+            transform: skewY(30deg);
+            cursor: pointer;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="minibox">
+
+        </div>
+    </div>
+</body>
+</html>
